@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackers Terminal</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+
+        .typing{
+            color: rgb(6, 180, 15);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        
+        .typing::after{
+            content: '';
+            animation: dots 1s ease-in 0.4s infinite normal ;
+        }
+
+        @keyframes dots {
+            10%{
+                content: '.';
+            }
+            40%{
+                content: '..';
+            }
+            70%{
+                content: '...';
+            }
+            100%{
+                content: '';
+            }
+        }
+        
+        
+    </style>
+</head>
+<body><div id="box6" class="video">
+        <div id="box1" class="typing"></div>
+        <div id="box2" class="typing"></div>
+        <div id="box3" class="typing"></div>
+        <div id="box4" class="typing"></div>
+        <div id="box5" class="typing"></div>
+    </div>     
+    
+   
+    <script src="script.js"></script>
+</body>
+</html>
